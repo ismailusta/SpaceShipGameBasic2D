@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3549400129863379905}
   - component: {fileID: 3915367209415757451}
   - component: {fileID: 2528763192104708729}
+  - component: {fileID: 2652382093287899605}
   m_Layer: 0
   m_Name: Asteroid_0
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2838530085933810829}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.8499365, y: 3.6028888, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -175,3 +176,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763762a8da4381a4485053f7c1df02b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2652382093287899605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2838530085933810829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca0d893cf5280044d847f87868516ec8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _exploidPrefab: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 3}
