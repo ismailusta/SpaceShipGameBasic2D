@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ShipController : MonoBehaviour
 {
-    float hiz = 10;
+    const float hiz = 10;
     bool topluyor = false;
 
     GameObject hedefyildiz;
@@ -42,7 +42,6 @@ public class ShipController : MonoBehaviour
             _toplayici.YildizSil(hedefyildiz);
             _rigidbody2D.linearVelocity = Vector2.zero;
             GitveTopla();
-
         }
     }
     // Update is called once per frame

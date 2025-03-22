@@ -24,12 +24,12 @@ public class Toplayici : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 position = Input.mousePosition;
-        position.z = -Camera.main.transform.position.z;
-        position = Camera.main.ScreenToWorldPoint(position);
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetMouseButtonDown(1))
         {
-            _yildizlar.Add(Instantiate(_yildizprefab, position, Quaternion.identity));
+            Vector3 pos = Input.mousePosition;
+            pos.z = -Camera.main.transform.position.z;
+            Vector3 worldpos = Camera.main.ScreenToWorldPoint(pos);
+            _yildizlar.Add(Instantiate(_yildizprefab, worldpos, Quaternion.identity));
         }
     }
     public void YildizSil(GameObject yildiz)

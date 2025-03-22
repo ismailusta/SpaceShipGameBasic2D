@@ -27,15 +27,12 @@ public class InputController : MonoBehaviour
         }
         else if (Input.GetButtonDown("Fire2"))
         {
-            for (int i = 0; i < _asteroidsList.Count; i++)
+
+            foreach (var asteroid in _asteroidsList)
             {
-                Destroy(_asteroidsList[i]);
+                Destroy(asteroid);
             }
-            // foreach (var asteroid in _asteroidsList)
-            // {
-            //     Destroy(asteroid);
-            // }
-            // _asteroidsList.Clear();
+            _asteroidsList.Clear();
         }
     }
 }

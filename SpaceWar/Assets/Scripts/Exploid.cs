@@ -8,8 +8,6 @@ public class Exploid : MonoBehaviour
     void Start()
     {
         _backtimer = gameObject.AddComponent<Timer>();
-        _backtimer.TotalTime = Random.Range(1, 20);
-        _backtimer.StartTimer();
     }
 
     // Update is called once per frame
@@ -21,5 +19,10 @@ public class Exploid : MonoBehaviour
             Destroy(gameObject);
 
         }
+    }
+    public void AsteroidYokEdici(int sure)
+    {
+        _backtimer.TotalTime = sure;
+        _backtimer.StartTimer();
     }
 }
