@@ -1,4 +1,4 @@
-using System.Security.Cryptography;
+
 using UnityEngine;
 
 public static class ScreenSizeCalculator

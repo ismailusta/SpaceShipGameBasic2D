@@ -12,11 +12,10 @@ GameObject:
   - component: {fileID: 5775468399579275021}
   - component: {fileID: 3549400129863379905}
   - component: {fileID: 3915367209415757451}
-  - component: {fileID: 2528763192104708729}
-  - component: {fileID: 2652382093287899605}
-  m_Layer: 0
+  - component: {fileID: 4987610424709314134}
+  m_Layer: 6
   m_Name: Asteroid_0
-  m_TagString: Untagged
+  m_TagString: Astreoid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -164,19 +163,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.2663126, y: 2.2098348}
   m_EdgeRadius: 0
---- !u!114 &2528763192104708729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2838530085933810829}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 763762a8da4381a4485053f7c1df02b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2652382093287899605
+--- !u!114 &4987610424709314134
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -185,7 +172,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2838530085933810829}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca0d893cf5280044d847f87868516ec8, type: 3}
+  m_Script: {fileID: 11500000, guid: f33f522c3f2b0464cbd1866dd9aef1ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _exploidPrefab: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 3}
