@@ -10,14 +10,19 @@ public class OyunKontrol : MonoBehaviour
     [SerializeField] int zorluk; //1
     [SerializeField] int carpan; //5
     GameObject _uzaygemisi;
+    UIKontrol uIKontrol;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        uIKontrol = GetComponent<UIKontrol>();
+    }
+    public void OyunBaslat()
+    {
+        uIKontrol.OyunBasladiginda();
         _uzaygemisi = Instantiate(_uzaygemisiPrefab);
         _uzaygemisi.transform.position = new Vector3((EkranBoyutu.Sol + EkranBoyutu.Sag) / 2, EkranBoyutu.Alt + 1.5f);
         AstreoidUret(5);
     }
-
     // Update is called once per frame
     void Update()
     {
