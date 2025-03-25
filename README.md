@@ -26,15 +26,4 @@ Bu, bir uzay gemisiyle asteroitleri vurarak puan topladığın ve gittikçe zorl
 --> Oyun Sonu
 ![Ekran görüntüsü 2025-03-25 054621](https://github.com/user-attachments/assets/dd7d5458-0266-4a27-b281-35eae3a0d675)
 
-## 🖥 Kurulum
-
-### 💻 PC (Windows) İçin Çalıştırma:
-1. **Projeyi klonla:**
-   ```bash
-  git clone https://github.com/ismailusta/2D-Space-War.git
-2. **Unity ile aç:**
-   - Unity Hub veya Unity Editor kullanarak projeyi aç.
-3. **Oyunu Çalıştır**
-   - Unity'de Play butonuna basarak oyunu başlat.
-     
 ## APK olarak da paylaşılacaktır.
