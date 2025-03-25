@@ -23,10 +23,17 @@ public class UIKontrol : MonoBehaviour
     }
     public void OyunBasladiginda()
     {
+        puannum = 0;
+        _oyunBitti.SetActive(false);
         _oyunAdi.SetActive(false);
         _baslabuton.gameObject.SetActive(false);
         _puan.SetActive(true);
         PuanGuncelle();
+    }
+    public void OyunBittiginde()
+    {
+        _oyunBitti.SetActive(true);
+        _baslabuton.gameObject.SetActive(true);
     }
     void PuanGuncelle()
     {
@@ -34,9 +41,24 @@ public class UIKontrol : MonoBehaviour
         _puanText.text = "SCORE:" + puannum;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AsteroidYokOldugunda(GameObject astereoid)
     {
-
+        var astereoidTur = astereoid.name[8];
+        switch (astereoidTur)
+        {
+            case '1':
+                puannum += 5;
+                PuanGuncelle();
+                break;
+            case '2':
+                puannum += 10;
+                PuanGuncelle();
+                break;
+            case '3':
+                puannum += 15;
+                PuanGuncelle();
+                break;
+        }
     }
+
 }

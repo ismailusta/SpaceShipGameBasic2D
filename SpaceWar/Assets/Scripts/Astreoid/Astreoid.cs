@@ -31,10 +31,15 @@ public class Astreoid : MonoBehaviour
     {
         if (collision.gameObject.tag == "Kursun") // eğer kursun tag'ıyle temas ederse
         {
+            GameObject.FindGameObjectWithTag("Audio").GetComponent<SesKontrol>().AstreoidPatlamaSesi();
             _oyunKontrol.AstreoidYokOldu(gameObject);
-            Instantiate(_exploidPrefab, gameObject.transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            YokOldu();
         }
+    }
+    public void YokOldu()
+    {
+        Instantiate(_exploidPrefab, gameObject.transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
     // Update is called once per frame
     void Update()

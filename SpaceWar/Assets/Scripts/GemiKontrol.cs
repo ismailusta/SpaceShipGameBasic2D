@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class GemiKontrol : MonoBehaviour
 {
+    OyunKontrol _oyunKontrol;
     [SerializeField] GameObject _kursunPrefab;
     [SerializeField] GameObject _patlamaPrefab;
     const float hiz = 5f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        _oyunKontrol = Camera.main.GetComponent<OyunKontrol>();
     }
 
     // Update is called once per frame
@@ -32,6 +33,7 @@ public class GemiKontrol : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            GameObject.FindGameObjectWithTag("Audio").GetComponent<SesKontrol>().KursunSesi();
             Vector3 kursunPosition = gameObject.transform.position;
             kursunPosition.y += 1.0f;
             Instantiate(_kursunPrefab, kursunPosition, Quaternion.identity);
@@ -41,6 +43,8 @@ public class GemiKontrol : MonoBehaviour
     {
         if (collision.gameObject.tag == "Astreoid")
         {
+            GameObject.FindGameObjectWithTag("Audio").GetComponent<SesKontrol>().GemiPatlamaSesi();
+            _oyunKontrol.OyunuBitti();
             Instantiate(_patlamaPrefab, gameObject.transform.position, Quaternion.identity);
             Destroy(gameObject);
         }

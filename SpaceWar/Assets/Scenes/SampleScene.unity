@@ -805,7 +805,7 @@ MonoBehaviour:
   _oyunAdi: {fileID: 1677470873}
   _oyunBitti: {fileID: 1003951356}
   _puan: {fileID: 875680112}
-  _baslabuton: {fileID: 191208679}
+  _baslabuton: {fileID: 191208681}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,7 +907,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &875680113
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1043,7 +1043,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1003951357
 RectTransform:
   m_ObjectHideFlags: 0

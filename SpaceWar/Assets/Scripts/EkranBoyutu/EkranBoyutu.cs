@@ -21,7 +21,6 @@ public class EkranBoyutu
             sag = cam.transform.position.x + ortoGenislik;
             ust = cam.transform.position.y + ortoYukseklik;
             alt = cam.transform.position.y - ortoYukseklik;
-            Debug.Log("Sol: " + sol + " Sag: " + sag + " Ust: " + ust + " Alt: " + alt);
         }
         else
         {

@@ -45,11 +45,22 @@ public class OyunKontrol : MonoBehaviour
     }
     public void AstreoidYokOldu(GameObject astreoid)
     {
+        uIKontrol.AsteroidYokOldugunda(astreoid);
         asteroidList.Remove(astreoid);
         if (asteroidList.Count <= zorluk)
         {
             zorluk++;
             AstreoidUret(zorluk * carpan);
         }
+    }
+    public void OyunuBitti()
+    {
+        foreach (GameObject astreoid in asteroidList)
+        {
+            astreoid.GetComponent<Astreoid>().YokOldu();
+        }
+        asteroidList.Clear();
+        zorluk = 1;
+        uIKontrol.OyunBittiginde();
     }
 }
